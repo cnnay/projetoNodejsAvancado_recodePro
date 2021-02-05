@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-info ">
+                <h3>Pesquisar endereço </h3>           
+            </div>
+    
+            <div class="card-body">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                              <label for="cep">Cep</label>
+                              <input class="form-control" type="text" name="cep" id="cep">
+                              <br>
+                              <label for="numero">Número</label>
+                              <input class="form-control" type="text" name="numero" id="numero">
+                              <input type="submit" class="btn btn-outline-success mt-2 bg-info " value="Buscar">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+<!-- Form Produtos -->
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-danger ">
+                <h3>Pesquisar Produtos IBGE </h3>           
+            </div>
+    
+            <div class="card-body">
+                <form action="/envia-covid" method="POST">
+                    <div class="form-group">
+                        <label for="covid">Número</label>
+                        <input class="form-control" type="text" name="covid" id="covid">
+                        <input type="submit" class="btn btn-outline-success mt-2 bg-info " value="Buscar">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+
+</body>
+</html>
